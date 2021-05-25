@@ -1,0 +1,14 @@
+.btnOperadores{
+    width: 55px;
+}
+.btnIgual{
+    width: 115px;
+}
+table{
+    text-align: center;
+    border: 0px;
+    width: 400px;
+}
+.operadores{
+    padding-top: 15px;
+}

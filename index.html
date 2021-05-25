@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">  
+  <head>    
+    <title>Calculadora</title>    
+    <meta charset="UTF-8">
+    <meta name="title" content="Título de la WEB">
+    <meta name="description" content="Descripción de la WEB">    
+    <link href="style.css" rel="stylesheet" type="text/css"/>   
+    <script src="index.js" defer></script> 
+  </head>  
+  <body>    
+     <!-- <p>Resultado de la operación <strong id="resultado" class="resultado"></strong></p> -->
+    <form>
+        <table>
+            <tr>
+                <td>
+                   <label for="inpNumero1">Primer número:</label><br>
+                    <input type="number" id="inpNumero1" name="inpNumero1"> 
+                </td>
+                <td class="operadores">
+                    <input type="button" id="suma" name="suma" value="+" class="btnOperadores" onclick="validarOperacion('suma')"> 
+                    <input type="button" id="resta" name="resta" value="-" class="btnOperadores" onclick="validarOperacion('resta')" > 
+                 </td>
+            </tr>
+            <tr>
+                <td>
+                   <label for="inpNumero2">Segundo número:</label><br>
+                   <input type="number" id="inpNumero2" name="inpNumero2">
+                </td>
+                <td class="operadores">
+                    <input type="button" id="btnDividir" name="btnDividir" value="%" class="btnOperadores" onclick="validarOperacion('division')"> 
+                    <input type="button" id="btnMultiplicar" name="btnMultiplicar" value="X" class="btnOperadores" onclick="validarOperacion('multiplicar')"> 
+                 </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lname">Resultado:</label><br>
+                    <input type="text" id="inpResultado" name="inpResultado" disabled="true">
+                 </td>
+                 <td class="operadores">
+                    <input type="button" id="btnIgual" name="btnIgual" value="=" class="btnOperadores" onclick="resultado()"> 
+                    <input type="button" id="btnReset" name="btnReset" value="C" class="btnOperadores" onclick="limpiar()"> 
+                 </td>
+            </tr>
+        </table>
+    </form>
+  </body>  
+</html>
